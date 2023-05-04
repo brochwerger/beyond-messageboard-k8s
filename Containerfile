@@ -11,8 +11,5 @@ EXPOSE 8000
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
-# Run as root - bad idea, will be fixed later
-USER root
-
 # Run the application
 ENTRYPOINT [ "/app/entrypoint.sh" ]
